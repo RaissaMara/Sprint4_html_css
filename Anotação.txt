@@ -1,0 +1,78 @@
+.imagem-canto {
+  position: fixed;
+  bottom: 0; /* Alinha ao fundo */
+  left: 0; /* Alinha à esquerda */
+  width: 100px;
+}
+
+.imagem-canto {
+   position: fixed; /* Fixa a imagem na posição mesmo ao rolar a página */
+   top: 0; /* Alinha ao topo */
+   right: 0; /* Alinha à direita */
+   width: 100px; /* Define a largura da imagem */
+}
+
+*{
+     font-size: large;  /* modifica o tamanho de qualquer elemento */
+     text-decoration: ;/* define como ficará o texto(subilinhado, tachado, negrito)*/
+     margin-bottom: 10px; /* Altera a margem  do fundo da página */
+    border: 20px; /*quando queremos demarcar o tamnho ocupado na borda */
+    
+    padding: ; /*Cria espaçamento interno no elemento*/
+     margin: ; /*Cria espaçamento externo na imagem*/
+     -ms-flex-item-align: ;
+}
+/* referenciar elementos dentro de um bloco */
+
+/* aumentar o tamanho dos elementos da main */
+
+/* Estilo do elemento */
+        .canto-inferior-direito {
+            position: fixed; /* Fixa o elemento na tela, mesmo ao rolar a página */
+            bottom: 10px;    /* Distância da borda inferior */
+            right: 10px;     /* Distância da borda direita */
+            background-color: #007BFF; /* Cor de fundo */
+            color: white;    /* Cor do texto */
+            padding: 10px 20px; /* Espaçamento interno */
+            border-radius: 5px; /* Bordas arredondadas */
+            font-family: Arial, sans-serif; /* Fonte */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+        }
+
+        .elemento {
+    position: absolute; /* Define o posicionamento relativo ao contêiner pai ou à página */
+    bottom: 0; /* Posiciona o elemento no fundo */
+    left: 0; /* Posiciona o elemento no lado esquerdo */
+    background-color: #4CAF50; /* Apenas para visualização */
+    color: white; /* Cor do texto */
+    padding: 10px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    
+    justify-content: /*alinhamento */
+flex-start: Alinha os itens no início do contêiner.
+flex-end: Alinha os itens no final do contêiner.
+center: Alinha os itens no centro do contêiner.
+space-between: Distribui os itens com espaço entre eles.
+space-around: Distribui os itens com espaço em torno deles.
+space-evenly: Distribui os itens com espaço igualmente em cada extremidade.;
+
+ /* Estilo para o contêiner */
+    .container {
+      position: relative; /* Define o contêiner como referência */
+      width: 300px;
+      height: 200px;
+      border: 1px solid #ccc;
+      margin: 20px auto;
+    }
+
+    /* Estilo para o elemento no canto superior direito */
+    .top-right {
+      position: absolute; /* Posicionamento absoluto em relação ao contêiner */
+      top: 10px; /* Distância do topo */
+      right: 10px; /* Distância da direita */
+      background-color: #007BFF;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 14px;
+    }
