@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+}
+body {
+  background-color: #FFFFFF;
+  color: #1351d8;
+  font-family: Arial, sans-serif;
+}
+/* Container principal */
+.central {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Vídeo promocional */
+.video-destaque {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; 
+}
+.video-destaque iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Área de comparação de veículos */
+.modelos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+}
+
+/* Grid de comparação */
+.comparacao-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+/* Coluna individual */
+.coluna {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 15px;
+  text-align: center;
+}
+
+/* Imagem do carro */
+.coluna img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Tabela de dados */
+.coluna table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.coluna th {
+  color: #1351d8;
+  font-size: 16px;
+  padding-bottom: 5px;
+}
+
+.coluna td {
+  font-size: 14px;
+  padding: 4px 0;
+}
+.linha-selecao {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #1351d8;
+}
+
+.linha-selecao input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #1351d8;
+  cursor: pointer;
+}
+
+/* Botão de comparação */
+.alinhar.btn {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.comparar-btn {
+  background-color: #1351d8;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.comparar-btn:hover {
+  background-color: #0f3fb0;
+}

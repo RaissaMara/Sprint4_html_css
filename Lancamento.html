@@ -1,4 +1,4 @@
-<!DOCTYPE html <header>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
@@ -11,73 +11,88 @@
 
 <body>
   <!-- Cabeçalho -->
-  <div class="head-logo">
-      <img src="img/logo-ford-256.png" alt="Logomarca da Ford">
-    </div>
-    <nav>
-      <div class="menu-navegacao">
-        <a href="index.html">Home</a>
-        <a href="Lancamento.html">Lançamento</a>
-        <a href="Contato.html">Contato</a>
-      </div>
-    </nav>
-  </header>>
+  <header>
+    <!-- Conteúdo do cabeçalho pode ser inserido aqui -->
+  </header>
 
   <!-- Conteúdo principal -->
-  <main>
+  <main class="central">
+    <!-- Vídeo promocional -->
     <section class="video-destaque">
       <iframe width="100%" height="315" src="https://www.youtube.com/embed/vQsryuNmsL0?si=zEWQNNevDT5ZtQEJ" 
         title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
       </iframe>
+    
     </section>
 
-    <section class="modelos">
-      <h2>Escolha seu modelo</h2>
-      <!-- Modelo 1 -->
-  <div class="modelo">
-    <img src="XL Cabine.jpg" alt="Imagem da Ranger XL Cabine Simples">
-    <label for="modelo-xl">
-      <input type="checkbox" id="modelo-xl" name="brands" value="XL Cabine Simples 2.2 Diesel 4X4 MT 2022">
-      XL Cabine Simples 2.2 Diesel 4X4 MT 2022 — Preço Sugerido: R$ 183.850
-    </label>
+    <!-- Área de comparação de veículos -->
+<section class="modelos">
+  <div class="comparacao-grid">
+    <div class="coluna">
+      <img src="img/XL Cabine.jpg" alt="Imagem da Ranger XL Cabine Simples">
+      <table>
+        <tr><th>XL Cabine Simples</th></tr>
+        <tr><td>2.2 Diesel 4X4 MT 2022</td></tr>
+        <tr><td>Preço Sugerido: R$ 183.850</td></tr>
+        <tr>
+          <td>
+            <div class="linha-selecao">
+              <input type="checkbox" name="modelo1" value="1">
+              <span></span>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="coluna">
+      <img src="img/xls 2.2 diesel.jpg" alt="Imagem da XLS 2.2 Diesel">
+      <table>
+        <tr><th>XLS 2.2 Diesel</th></tr>
+        <tr><td>2.2 Diesel 4X4 AT 2022</td></tr>
+        <tr><td>Preço Sugerido: R$ 220.690</td></tr>
+        <tr>
+          <td>
+            <div class="linha-selecao">
+              <input type="checkbox" name="modelo2" value="1">
+              <span></span>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="coluna">
+      <img src="img/storm.jpg" alt="Imagem da Ranger Storm">
+      <table>
+        <tr><th>Storm 3.2 Diesel</th></tr>
+        <tr><td>3.2 Diesel 4X4 AT 2022</td></tr>
+        <tr><td>Preço Sugerido: R$ 222.790</td></tr>
+        <tr>
+          <td>
+            <div class="linha-selecao">
+              <input type="checkbox" name="modelo3" value="1">
+              <span></span>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
   </div>
 
-  <!-- Modelo 2 -->
-  <div class="modelo">
-    <img src="xls 2.2 diesel.jpg" alt="Imagem da Ranger XLS 2.2 Diesel">
-    <label for="modelo-xls">
-      <input type="checkbox" id="modelo-xls" name="brands" value="XLS 2.2 Diesel 4X4 AT 2022">
-      XLS 2.2 Diesel 4X4 AT 2022 — Preço Sugerido: R$ 220.690
-    </label>
+  <div class="alinhar btn">
+    <button type="button" class="comparar-btn">Comparar Carros</button>
   </div>
-
-  <!-- Modelo 3 -->
-  <div class="modelo">
-    <img src="storm.jpg" alt="Imagem da Ranger Storm">
-    <label for="modelo-storm">
-      <input type="checkbox" id="modelo-storm" name="brands" value="Storm 3.2 Diesel 4X4 AT 2022">
-      Storm 3.2 Diesel 4X4 AT 2022 — Preço Sugerido: R$ 222.790
-    </label>
-  </div>
-
-  <button onclick="compararModelos()">Comparar Carros</button>
-</section>
-
-  <!-- Rodapé -->
-  <footer>
-    <div class="footer-text">
-      <p>Redes Sociais</p>
-    </div>
-    <div class="footer-img">
-      <a href="#"><img src="img/facebook-50.png" alt="Facebook"></a>
-      <a href="#"><img src="img/youtube-squared-50.png" alt="YouTube"></a>
-      <a href="#"><img src="img/instagram-logo-50.png" alt="Instagram"></a>
-    </div>
-    <div class="footer-logo">
-      <img src="img/ford-96.png" alt="Logomarca da Ford">
-    </div>
-  </footer>
+  </section>
+  </main>
 
 </body>
+
+<!-- Rodapé -->
+
+<footer>
+   
+</footer>
+
 </html>

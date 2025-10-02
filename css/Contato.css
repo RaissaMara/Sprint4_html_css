@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+     background-color: #FFFFFF;
+    color: #1351d8;
+}
+main{
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+}
+ /* Imagem da Ranger XLS 2.2 Diesel */
+ .card{
+  max-width: 300px;
+  border-radius: 8px;
+ }
+ /* Formulários */
+ .central{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+ }
+.form-get {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form-get input,
+.form-get select {
+  margin-bottom: 8px; /* Espaço curto entre os campos */
+  padding: 6px;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form.post{
+    display: flex;
+    flex-direction: column;
+
+}
+/* botão de enviar */
+.alinhar.btn {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.enviar-btn {
+  background-color: #1351d8;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.enviar-btn:hover {
+  background-color: #0f3fb0;
+}
+
+.linha-modelo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+  color: #1351d8;
+}
+
+.linha-modelo input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #1351d8;
+  cursor: pointer;
+}
