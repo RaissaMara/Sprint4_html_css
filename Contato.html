@@ -12,48 +12,63 @@
 <body>
   <!--Cabeçalho da Página-->  
   <header>
-    <div class="head-logo">
-      <img src="img/logo-ford-256.png" alt="Logomarca da Ford">
-    </div>
-    <nav>
-      <div class="menu-navegacao">
-        <a href="index.html">Home</a>
-        <a href="Lancamento.html">Lançamento</a>
-        <a href="Contato.html">Contato</a>
-      </div>
-    </nav>
+    
+
   </header>
   <!--Contéudo da Página Principal-->
 <main>
-    <div>
-<!--Formulário-->
-<!-- nome do usuário -->
- <!-- e-mail -->
+  <!-- Imagem da Ranger XLS 2.2 Diesel -->
+   <div class="card">
+  <img src="img/xls 2.2 diesel.jpg" alt="Imagem da Ranger XLS 2.2 Diesel"><br><br>
+</div>
+<br>
+    <div class="central">  
+ <!--Formulário-->
+ <h3 id="text.sobre">Sobre você</h3>
+ <form class="form.get" action="#" method="get">
+ <!-- nome -->
+  <label for="CampoNome"></label>
+ <input type="text" id="CampoNome" required placeholder="SEU NOME* ">
+ <br>
+<!-- e-mail -->
+<label for="CampoEmail"></label>
+<input type="email" name="" id="CampoEmail" required placeholder="E-MAIL*">
+<br>
 <!-- telefone -->
+ <label for="CampoTelefone"></label>
+ <input type="tel" id="CampoTelefone" class="input-padrao" required placeholder="(xx)9xxxx-xxxx">
+ <br>
  <!-- tipo de contato -->
-  
- <form action=""></form>
-    </div>
+  <label for="CaixaSelecao"></label>
+  <select name="" id="CaixaSelecao" required aria-placeholder="TIPO DE CONTATO*">
+  <option value="0" selected disabled hidden></option>
+  <option value="">Whatsapp</option>
+  <option value="">Facebook</option>
+  <option value="">YouTube</option>
+  <option value="">Instagram</option>
+  </select>
+</form>
+<div class="form.post">  
+  <!-- Mensagem:(elogio, reclamação ou solicitação)-->
+  <form action="enviar/mensagem" method="post">
+     <label for="CampoMensagem"></label><br>
+        <textarea id="CampoMensagem" name="mensagem" rows="5" cols="40" placeholder="Digite sua mensagem aqui (elogio, reclamação ou solicitação)..."></textarea><br>
+        <br> 
+  <div class="alinhar.btn">
+  <!-- botão de enviar -->
+<button class="enviar-btn" type="submit">Enviar</button>
+  </div>
+  </form>
+  </div>
+  </div>
  </main>
-
-        </div>    
+   
 </body>
 
-<!-- Rodapé -->
+  <!-- Rodapé -->
 
-  <footer> 
-    <div class="footer-text">
-      <p>Redes Sociais</p>
-    </div>
-    <div class="footer-img">
-      <a href="#"><img src="img/facebook-50.png" alt="Facebook"></a>
-      <a href="#"><img src="img/youtube-squared-50.png" alt="YouTube"></a>
-      <a href="#"><img src="img/instagram-logo-50.png" alt="Instagram"></a>
-    </div>
-    <div class="footer-logo">
-      <img src="img/ford-96.png" alt="Logomarca da Ford">
-    </div>
+  <footer>
+
   </footer>
 
-</body>
 </html>
